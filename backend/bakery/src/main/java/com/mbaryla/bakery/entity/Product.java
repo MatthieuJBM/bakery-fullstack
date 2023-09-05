@@ -32,18 +32,6 @@ public class Product {
 
 
 }
-//    @Column(name = "productName", length = 30)
-//    private String productName;
-//
-//    @Column(name = "subcategoryId")
-//    private int subcategoryId;
-//
-//    @Column(name = "price", precision = 5, scale = 2)
-//    private BigDecimal price;
-//
-//    @ManyToOne
-//    @JoinColumn(name = "subcategoryId", referencedColumnName = "subcategoryId", insertable = false, updatable = false)
-//    private Subcategory subcategory;
 
 //    CREATE TABLE products(
 //        productId int auto_increment,
