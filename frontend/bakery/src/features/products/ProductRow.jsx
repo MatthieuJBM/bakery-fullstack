@@ -46,12 +46,12 @@ ProductRow.propTypes = {
 };
 
 function ProductRow({ product }) {
-  const { name: productName, price } = product;
+  const { productName, productPrice } = product;
 
   return (
     <TableRow role="row">
       <Text>{productName}</Text>
-      <Text>{price}</Text>
+      <Text>{productPrice}</Text>
       <Button color="lime-400">UPDATE</Button>
       <Button color="red-300">DELETE</Button>
     </TableRow>

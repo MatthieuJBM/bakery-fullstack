@@ -47,7 +47,7 @@ function ProductsTable() {
         <div>Price</div>
       </TableHeader>
       {products.map((product) => (
-        <ProductRow product={product} key={product.id} />
+        <ProductRow product={product} key={product.productId} />
       ))}
     </Table>
   );

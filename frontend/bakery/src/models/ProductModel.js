@@ -1,9 +1,9 @@
 class ProductModel {
-  constructor(productId, productName, subcategoryId, price) {
+  constructor(productId, productName, productPrice) {
     this.productId = productId;
     this.productName = productName;
-    this.subcategoryId = subcategoryId;
-    this.price = price;
+    this.productPrice = productPrice;
+    // this.subcategoryId = subcategoryId;
   }
 }
 

@@ -9,10 +9,11 @@ export async function getProducts() {
   const loadedProducts = [];
   for (const key in responseData) {
     loadedProducts.push({
-      id: responseData[key].id,
-      name: responseData[key].name,
-      price: responseData[key].price,
-      subcategoryId: responseData[key].subcategoryId,
+      productId: responseData[key].productId,
+      productName: responseData[key].productName,
+      productPrice: responseData[key].productPrice,
+      // subcategoryId: responseData[key].subcategoryId,
+      //_links: responseData[key]._links.,
     });
   }
   return loadedProducts;
