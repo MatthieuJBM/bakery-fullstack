@@ -13,16 +13,16 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="productId")
-    private Long id;
+    private Long productId;
 
     @Column(name="productName")
-    private String name;
+    private String productName;
 
-    @Column(name="price")
-    private BigDecimal price;
+    @Column(name="productPrice")
+    private BigDecimal productPrice;
 
-    @Column(name="subcategoryId")
-    private Long subcategoryId;
+//    @Column(name="subcategoryId")
+//    private Long subcategoryId;
 
 
     @ManyToOne

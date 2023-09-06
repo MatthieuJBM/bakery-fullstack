@@ -10,7 +10,7 @@ CREATE TABLE ingredients(
 	ingredientId int auto_increment,
     ingredientName varchar(60),
     manufacturer varchar(30),
-    price numeric(3,2),
+    ingredientPrice numeric(3,2),
     PRIMARY KEY(ingredientId)
 );
 CREATE TABLE allergensConnectorToIngredients(
@@ -60,7 +60,7 @@ CREATE TABLE products(
 	productId int auto_increment,
     productName varchar(30),
     subcategoryId int,
-    price numeric(5,2),
+    productPrice numeric(5,2),
     PRIMARY KEY(productId),
     FOREIGN KEY(subcategoryId) REFERENCES subcategories(subcategoryId)
 );
@@ -87,10 +87,10 @@ SELECT * FROM subcategories;
 -- SELECT c.categoryName, s.subcategoryName FROM categories c JOIN subcategories s
 -- ON c.categoryId=s.categoryId;
 
-INSERT INTO products(productName, subCategoryId, price) VALUES("Drożdżówka z Czekoladą", 1, 3.50);
-INSERT INTO products(productName, subCategoryId, price) VALUES("Drożdżówka z Serem", 1, 4.00);
-INSERT INTO products(productName, subCategoryId, price) VALUES("Drożdżówka z Marmeladą", 1, 3.50);
-INSERT INTO products(productName, subCategoryId, price) VALUES("Rogal z Bitą Śmietaną", 1, 5.00);
+INSERT INTO products(productName, subCategoryId, productPrice) VALUES("Drożdżówka z Czekoladą", 1, 3.50);
+INSERT INTO products(productName, subCategoryId, productPrice) VALUES("Drożdżówka z Serem", 1, 4.00);
+INSERT INTO products(productName, subCategoryId, productPrice) VALUES("Drożdżówka z Marmeladą", 1, 3.50);
+INSERT INTO products(productName, subCategoryId, productPrice) VALUES("Rogal z Bitą Śmietaną", 1, 5.00);
 
 SELECT * FROM products;
 

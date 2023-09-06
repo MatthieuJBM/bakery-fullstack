@@ -1,6 +1,36 @@
 package com.mbaryla.bakery.entity;
 
+import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Entity
+@Table(name = "NourishmentTable")
+@Data
 public class NourishmentTable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+
+    private Long nourishmentId;
+
+    private Long ingredientId;
+
+    private BigDecimal calories;
+
+    private BigDecimal protein;
+
+    private BigDecimal fat;
+
+    private BigDecimal sugar;
+
+    private BigDecimal salt;
+
 }
 
 

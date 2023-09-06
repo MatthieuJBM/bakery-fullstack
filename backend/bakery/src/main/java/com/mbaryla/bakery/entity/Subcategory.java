@@ -12,13 +12,13 @@ public class Subcategory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="subcategoryId")
-    private Long id;
+    private Long subcategoryId;
 
     @Column(name="subcategoryName")
-    private String name;
+    private String subcategoryName;
 
-    @Column(name="categoryId")
-    private Long categoryId;
+//    @Column(name="categoryId")
+//    private Long categoryId;
 
     @ManyToOne
     @JoinColumn(name = "categoryId", referencedColumnName = "categoryId", insertable = false, updatable = false)

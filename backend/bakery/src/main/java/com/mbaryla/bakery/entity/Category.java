@@ -12,10 +12,10 @@ public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="categoryId")
-    private Long id;
+    private Long categoryId;
 
     @Column(name="categoryName")
-    private String name;
+    private String categoryName;
 }
 
 //    CREATE TABLE categories(
